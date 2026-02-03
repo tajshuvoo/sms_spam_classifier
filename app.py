@@ -5,6 +5,13 @@ import string
 import nltk
 from nltk.stem.porter import PorterStemmer
 
+@st.cache_resource
+def load_nltk():
+    nltk.download("punkt")
+    nltk.download("punkt_tab")
+
+load_nltk()
+
 ps = PorterStemmer()
 
 def transform(text):
