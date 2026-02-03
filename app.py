@@ -9,7 +9,7 @@ from nltk.stem.porter import PorterStemmer
 def load_nltk():
     nltk.download("punkt")
     nltk.download("punkt_tab")
-    stopwords.words("english")
+    nltk.download("stopwords")
 
 load_nltk()
 
